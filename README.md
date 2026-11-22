@@ -10,5 +10,12 @@ Each lesson uses a **fictional** public-service scenario and **synthetic** data.
 
 New lessons are added as their own folders.
 
+## Links
+- **Website:** [inferencepublic.co.uk](https://inferencepublic.co.uk/)
+- **All lessons:** [Inference engineering lessons](https://inferencepublic.co.uk/learn/inference-engineering/)
+- **Lesson 1:** [The tests pass. Should the release go ahead?](https://inferencepublic.co.uk/learn/inference-engineering/green-tests-public-service-release/)
+- **Background reading:** [Verifying AI-generated code and tests](https://inferencepublic.co.uk/insights/verifying-ai-generated-code/)
+- **Questions about the lessons:** hello@inferencepublic.co.uk
+
 ## Licence
 [MIT](LICENSE). Copyright Inference Clinical Ltd (Inference Public is a service of Inference Clinical Ltd).

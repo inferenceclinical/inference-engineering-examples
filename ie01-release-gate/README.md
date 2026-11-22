@@ -1,8 +1,14 @@
 # Lesson 1: The tests pass. Should the release go ahead?
 
-Code for the Inference Public lesson at https://inferencepublic.co.uk/learn/inference-engineering/green-tests-public-service-release/
+Code for an Inference Public practical lesson.
 
 **Do the lesson first.** It asks you to make two predictions before you see any results. This folder contains the answers.
+
+## Start here
+- **The lesson:** [The tests pass. Should the release go ahead?](https://inferencepublic.co.uk/learn/inference-engineering/green-tests-public-service-release/)
+- **Printable prediction sheet:** [inferencepublic.co.uk/…/green-tests-prediction-sheet/](https://inferencepublic.co.uk/learn/inference-engineering/green-tests-prediction-sheet/)
+- **Background reading:** [Verifying AI-generated code and tests](https://inferencepublic.co.uk/insights/verifying-ai-generated-code/)
+- **More lessons:** [Inference engineering lessons](https://inferencepublic.co.uk/learn/inference-engineering/)
 
 ## What is here
 | Path | What it is |
