@@ -1,0 +1,10 @@
+mutant,source,weak_expected_failing,strong_expected_failing,extras_expected_failing,predicted_weak_rc,predicted_strong_rc
+BASELINE,02_NORMATIVE_POLICY_CONTRACT + oracle baseline columns,,,,0,0
+M1,oracle v2 (verbatim) + Claude Code extras derivation,,C2;C3;C8;N1;N2;N3;N4;N8,E05,0,1
+M2,oracle v2 (verbatim) + Claude Code extras derivation,,C3,,0,1
+M3,oracle v2 (verbatim) + Claude Code extras derivation,C5;C7,C5;C7;N6,E05;E07,1,1
+M4,oracle v2 (verbatim) + Claude Code extras derivation,C6,C6;N12,,1,1
+M5,oracle v2 (verbatim) + Claude Code extras derivation,C7,C7,,1,1
+M6,oracle v2 (verbatim) + Claude Code extras derivation,,C8,,0,1
+M7,oracle v2 (verbatim) + Claude Code extras derivation,,V6a;S-MULTI,,0,1
+M8,oracle v2 (verbatim) + Claude Code extras derivation,,V6c;V6c2;V6c3;S-MULTI;S-M8-REVERSE,E03;E17,0,1

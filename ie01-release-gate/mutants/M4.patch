@@ -1,0 +1,11 @@
+--- a/src/ie01_gate/gate.py
++++ b/src/ie01_gate/gate.py
+@@ -32,8 +32,6 @@
+     if required_checks is not _MISSING:
+         if type(required_checks) is not list:
+             errors.add("CONFIG_TYPE")
+-        elif not required_checks:
+-            errors.add("CONFIG_EMPTY")
+         else:
+             seen_required = set()
+             for item in required_checks:

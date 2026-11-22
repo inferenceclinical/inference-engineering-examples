@@ -1,0 +1,11 @@
+--- a/src/ie01_gate/gate.py
++++ b/src/ie01_gate/gate.py
+@@ -88,7 +88,7 @@
+             reasons.add(f"REQUIRED_MISSING:{check_id}")
+             continue
+         status = observed[check_id]
+-        if status == "PASSED":
++        if status in ("PASSED", "SKIPPED"):  # M6: SKIPPED converted to passing evidence
+             continue
+         if status in KNOWN_STATUSES:
+             reasons.add(f"REQUIRED_NOT_PASSED:{check_id}:{status}")

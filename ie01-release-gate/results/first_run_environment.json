@@ -1,0 +1,11 @@
+{
+ "utc_start": "20261122T204839Z",
+ "utc_end": "20261122T204844Z",
+ "python": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 17.0.0 (clang-1700.6.4.2)]",
+ "platform": "macOS-15.8.3-arm64-arm-64bit-Mach-O",
+ "pytest": "pytest 9.2.0",
+ "git_head": "57f4f049bbb7519fef6fee3e971e11f6ec7249d1",
+ "git_dirty": "clean",
+ "frozen_files_verified": 42,
+ "note": "Local interpreter path removed. git_head is the private lab commit at execution; the frozen files' SHA-256 are in prerun/FREEZE_RECORD.csv."
+}

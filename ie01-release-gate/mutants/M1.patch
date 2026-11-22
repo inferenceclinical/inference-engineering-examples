@@ -1,0 +1,21 @@
+--- a/src/ie01_gate/gate.py
++++ b/src/ie01_gate/gate.py
+@@ -84,16 +84,8 @@
+     reasons, warnings = set(), set()
+     required = list(required_checks)
+     for check_id in required:
+-        if check_id not in observed:
+-            reasons.add(f"REQUIRED_MISSING:{check_id}")
+-            continue
+-        status = observed[check_id]
+-        if status == "PASSED":
+-            continue
+-        if status in KNOWN_STATUSES:
+-            reasons.add(f"REQUIRED_NOT_PASSED:{check_id}:{status}")
+-        else:
+-            reasons.add(f"REQUIRED_UNKNOWN_STATUS:{check_id}")
++        if observed.get(check_id) == "FAILED":  # M1: only an observed FAILED blocks a required check
++            reasons.add(f"REQUIRED_NOT_PASSED:{check_id}:FAILED")
+     required_set = set(required)
+     for row_id in observed:
+         if row_id not in required_set:

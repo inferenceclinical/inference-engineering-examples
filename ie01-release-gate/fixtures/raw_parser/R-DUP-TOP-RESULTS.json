@@ -1,0 +1,1 @@
+{"required_checks":["unit","integration"],"results":[{"id":"unit","status":"PASSED"},{"id":"integration","status":"PASSED"}],"results":[{"id":"unit","status":"FAILED"}],"proposer":"alice","reviewer":"bob"}

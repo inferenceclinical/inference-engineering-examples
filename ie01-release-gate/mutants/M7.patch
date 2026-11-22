@@ -1,0 +1,20 @@
+--- a/src/ie01_gate/gate.py
++++ b/src/ie01_gate/gate.py
+@@ -40,8 +40,6 @@
+                 if not _valid_id(item):
+                     errors.add("CONFIG_INVALID_ID")
+                     continue
+-                if item in seen_required:
+-                    errors.add("CONFIG_DUPLICATE_ID")
+                 seen_required.add(item)
+ 
+     valid_rows = []  # (id, status) in array order, only rows whose id and status are both well typed
+@@ -82,7 +80,7 @@
+         observed[row_id] = status  # distinct ids here (duplicates were rejected above)
+ 
+     reasons, warnings = set(), set()
+-    required = list(required_checks)
++    required = list(dict.fromkeys(required_checks))  # M7: duplicates silently collapsed
+     for check_id in required:
+         if check_id not in observed:
+             reasons.add(f"REQUIRED_MISSING:{check_id}")

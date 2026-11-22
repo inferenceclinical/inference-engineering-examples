@@ -1,0 +1,11 @@
+--- a/src/ie01_gate/gate.py
++++ b/src/ie01_gate/gate.py
+@@ -106,8 +106,6 @@
+         reasons.add("REVIEWER_ABSENT")
+     elif reviewer.strip() == "":
+         reasons.add("REVIEWER_BLANK")
+-    elif reviewer == proposer:
+-        reasons.add("SELF_REVIEW")
+ 
+     return _evaluation("BLOCK" if reasons else "ALLOW", reasons, warnings)
+ 

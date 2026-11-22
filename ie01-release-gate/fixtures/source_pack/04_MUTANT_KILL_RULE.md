@@ -1,0 +1,4 @@
+# Proposed kill rule — not execution evidence
+A mutant counts as killed only if the baseline suite at exactly the pinned implementation, fixture and suite hashes exits 0 with expected collected test count; the mutant exits 1; all failed cases are assertion failures on the declared comparison; and failing case IDs match the frozen prediction exactly. Mutant exit 0 = SURVIVED. Exit 2–5, collection failures, timeouts, process crashes and non-assertion test errors = HARNESS_ERROR (never a kill). A differing assertion-failure set is DISCREPANCY, not a kill and not a reason to rewrite the prediction. Capture immutable source/suite/fixture hashes and case-ID-to-test-ID mapping before first run; compare against this signed prediction.
+
+**Design note:** the old oracle has `NOT CREATED` for every implementation/test hash. This v2 remains a prediction and must not be renamed FROZEN until named ratification and a separate pre-run freeze record exist.

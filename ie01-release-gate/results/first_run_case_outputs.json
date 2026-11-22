@@ -1,0 +1,6330 @@
+{
+ "BASELINE": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M1": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M2": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M3": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M4": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:integration",
+     "UNRELATED_CHECK:unit"
+    ]
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:integration",
+     "UNRELATED_CHECK:unit"
+    ]
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M5": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M6": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M7": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ],
+ "M8": [
+  {
+   "case_id": "C1",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:RUNNING"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:SKIPPED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C5",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_ABSENT"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C6",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "C7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "SELF_REVIEW"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6a",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6b",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:unit:FAILED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c2",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6d",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N1",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration",
+     "REQUIRED_MISSING:unit"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N2",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_NOT_PASSED:integration:CANCELLED"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N3",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N4",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_UNKNOWN_STATUS:integration"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N5",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_STATUS_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N6",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REVIEWER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N7",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N8",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "REQUIRED_MISSING:integration"
+    ],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N9",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N10",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N11",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N12",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_EMPTY"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N13",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "PROPOSER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N14",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N15",
+   "expected": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": [
+     "UNRELATED_CHECK:e2e"
+    ]
+   }
+  },
+  {
+   "case_id": "N16",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "N17",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "V6c3",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-INPUT_SHAPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "INPUT_SHAPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-CONFIG_TYPE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EVIDENCE_NOT_ARRAY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-EXTRA_ROW_KEY",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-NONSTRING_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-TRAILING_NEWLINE_ID",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "G-WS_PROPOSER",
+   "expected": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "BLOCK",
+    "reasons": [
+     "PROPOSER_BLANK"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-MULTI",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_DUPLICATE_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "CONFIG_DUPLICATE_ID",
+     "CONFIG_INVALID_ID",
+     "EVIDENCE_STATUS_TYPE",
+     "EVIDENCE_TYPE",
+     "PROPOSER_TYPE",
+     "REVIEWER_TYPE"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-M8-REVERSE",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_DUPLICATE_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "ALLOW",
+    "reasons": [],
+    "warnings": []
+   }
+  },
+  {
+   "case_id": "S-ID-VARIANT",
+   "expected": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   },
+   "observed": {
+    "decision": "INVALID_INPUT",
+    "reasons": [
+     "EVIDENCE_INVALID_ID"
+    ],
+    "warnings": []
+   }
+  }
+ ]
+}

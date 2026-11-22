@@ -1,0 +1,4 @@
+control,target,rc,collected,non_assertion_failures_count,classification,expected,ok
+NC-EMPTY,empty suite dir,5,0,0,HARNESS_ERROR,HARNESS_ERROR,True
+NC-SYNTAX,strong suite,2,3,0,HARNESS_ERROR,HARNESS_ERROR,True
+NC-CRASH,strong suite,1,49,30,HARNESS_ERROR,HARNESS_ERROR,True

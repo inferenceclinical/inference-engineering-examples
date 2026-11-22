@@ -1,0 +1,16 @@
+--- a/src/ie01_gate/gate.py
++++ b/src/ie01_gate/gate.py
+@@ -102,12 +102,7 @@
+     # 4. Roles. String comparison only: it does not establish identity or review authority.
+     if proposer.strip() == "":
+         reasons.add("PROPOSER_BLANK")
+-    if reviewer is None:
+-        reasons.add("REVIEWER_ABSENT")
+-    elif reviewer.strip() == "":
+-        reasons.add("REVIEWER_BLANK")
+-    elif reviewer == proposer:
+-        reasons.add("SELF_REVIEW")
++    pass  # M3: reviewer absence, blank and self-review checks bypassed (type check retained)
+ 
+     return _evaluation("BLOCK" if reasons else "ALLOW", reasons, warnings)
+ 

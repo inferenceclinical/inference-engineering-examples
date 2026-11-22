@@ -1,0 +1,20 @@
+--- a/src/ie01_gate/gate.py
++++ b/src/ie01_gate/gate.py
+@@ -61,8 +61,6 @@
+                 if not _is_str(status):
+                     errors.add("EVIDENCE_STATUS_TYPE")
+                 if id_ok:
+-                    if row_id in seen_observed:
+-                        errors.add("EVIDENCE_DUPLICATE_ID")
+                     seen_observed.add(row_id)
+                     if _is_str(status):
+                         valid_rows.append((row_id, status))
+@@ -79,7 +77,7 @@
+     # 3. Business evaluation on structurally valid input.
+     observed = {}
+     for row_id, status in valid_rows:
+-        observed[row_id] = status  # distinct ids here (duplicates were rejected above)
++        observed[row_id] = status  # M8: no duplicate detection, so later rows overwrite earlier ones
+ 
+     reasons, warnings = set(), set()
+     required = list(required_checks)
